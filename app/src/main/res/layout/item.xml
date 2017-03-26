@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#800000"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/txtMa"
+        android:text="55555"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:background="#FF0080"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtMa"
+        android:id="@+id/txtTen"
+        android:text="Riêng một góc trời"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#FFFF00"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTen"
+        android:layout_toRightOf="@id/txtMa"
+        android:id="@+id/txtCaSi"
+        android:text="Ca sĩ :Tuấn Ngọc"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:textColor="#FFFF00"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCaSi"
+        android:layout_toRightOf="@id/txtMa"
+        android:background="@drawable/like"
+        android:id="@+id/btnLike"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCaSi"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/btnLike"
+        android:id="@+id/btnDisLike"
+        android:background="@drawable/dislike"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/btnLike"
+        android:background="#FFFF00"
+        />
+
+
+</RelativeLayout>
